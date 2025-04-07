@@ -4,15 +4,12 @@ import Footer from "./footer";
 import { Outlet } from "react-router-dom";
 
 function All(){
-   
     return(
         <>
 
         <Header/>
         <Outlet/>
-        <Footer/>
-        
-        
+        <Footer/> 
         </>
     )
 }

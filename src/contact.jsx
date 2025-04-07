@@ -2,19 +2,277 @@ import React from "react";
 
 function Contact(){
     return(
-        <section>
-            <div className="contact"> 
+      <>
 
-                <div>
-                    <input type="text" placeholder="Name" />
+      <div className="bg-blue-500 grid md:grid-cols-2 justify-items-center items-center grid-cols-1 mt-20">
+        <div className="m-5">
+          <h1 className="text-4xl m-2   text-white">Get the perfect essay from HomeworkDower
+          in just four easy steps</h1>
 
-                </div>
-                <div>
-                    <img src="data:image/png;base64,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" alt="noimage" />
+          <p className="font-bold  m-2 text-white">Learn how fast and convenient it is to use our platform
+          and acquire a perfect essay with minimal effort.</p>
+        </div>
+        <div className="m-5">
+          <span className="flex">
+          <img className="h-80 w-80" src="https://asset.edubirdie.com/bundles/asterfreelance/_layout/images/EdubirdieCom/hiw-intro/process.svg" alt="noimage " />      <img className="h-44  w-44" src="https://asset.edubirdie.com/bundles/asterfreelance/_layout/images/EdubirdieCom/hiw-intro/hiw-bird_mob@2x.png" alt="noimage " />
 
-                </div>
-            </div>
-        </section>
+          </span>
+        
+        </div>
+      </div>
+
+
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-4 m-3 justify-items-center items-center">
+        <div>
+
+      <img className="h-64 w-64" src=" https://asset.edubirdie.com/bundles/asterfreelance/_layout/images/EdubirdieCom/hiw-list/1.svg" alt="noiamge" />
+
+        </div>
+        <div>
+          <p>
+          1. Give us the details
+
+          </p>
+          <p>
+          Fill out the order form with essay instructions your teacher has provided. We'll quickly match you with the right writers. All you need to do to register is give us an email address and we’ll generate an account for you.
+
+          </p>
+          <p>
+          Tips and Tricks
+
+          </p>
+          <p>
+          The more detailed your instructions are, the more accurate the final paper will be.
+If needed, include relevant resources, links and academic level of English (ESL/ENL) in the Paper Instructions field.
+A further deadline may result in a lower price.
+
+          </p>
+
+        </div>
+      </div>
+
+
+
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-4 m-3 justify-items-center items-center">
+        <div>
+
+        <p>
+          1. Give us the details
+
+          </p>
+          <p>
+          Fill out the order form with essay instructions your teacher has provided. We'll quickly match you with the right writers. All you need to do to register is give us an email address and we’ll generate an account for you.
+
+          </p>
+          <p>
+          Tips and Tricks
+
+          </p>
+          <p>
+          The more detailed your instructions are, the more accurate the final paper will be.
+If needed, include relevant resources, links and academic level of English (ESL/ENL) in the Paper Instructions field.
+A further deadline may result in a lower price.
+
+          </p>
+
+
+
+        </div>
+        <div>
+          
+      <img className="h-64 w-64" src=" https://asset.edubirdie.com/bundles/asterfreelance/_layout/images/EdubirdieCom/hiw-list/2.svg" alt="noiamge" />
+      
+        </div>
+      </div>
+
+
+
+
+
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-4  m-3 justify-items-center items-center">
+        <div>
+
+      <img className="h-64 w-64" src=" https://asset.edubirdie.com/bundles/asterfreelance/_layout/images/EdubirdieCom/hiw-list/4.svg" alt="noiamge" />
+
+        </div>
+        <div>
+          <p>
+          1. Give us the details
+
+          </p>
+          <p>
+          Fill out the order form with essay instructions your teacher has provided. We'll quickly match you with the right writers. All you need to do to register is give us an email address and we’ll generate an account for you.
+
+          </p>
+          <p>
+          Tips and Tricks
+
+          </p>
+          <p>
+          The more detailed your instructions are, the more accurate the final paper will be.
+If needed, include relevant resources, links and academic level of English (ESL/ENL) in the Paper Instructions field.
+A further deadline may result in a lower price.
+
+          </p>
+
+        </div>
+      </div>
+
+
+
+
+
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-4 m-3 justify-items-center items-center">
+        <div>
+        <p>
+          1. Give us the details
+
+          </p>
+          <p>
+          Fill out the order form with essay instructions your teacher has provided. We'll quickly match you with the right writers. All you need to do to register is give us an email address and we’ll generate an account for you.
+
+          </p>
+          <p>
+          Tips and Tricks
+
+          </p>
+          <p>
+          The more detailed your instructions are, the more accurate the final paper will be.
+If needed, include relevant resources, links and academic level of English (ESL/ENL) in the Paper Instructions field.
+A further deadline may result in a lower price.
+
+          </p>
+
+   
+
+        </div>
+        <div>
+        <img className="h-64 w-64" src=" https://asset.edubirdie.com/bundles/asterfreelance/_layout/images/EdubirdieCom/hiw-list/3.svg" alt="noiamge" />
+
+        </div>
+      </div>
+
+
+     
+     <div className="flex mt-8 mb-16 justify-center">
+     <button className="bg-yellow-500 rounded-sm  w-48 h-10 ">
+       Order Us
+      </button>
+
+     </div>
+
+
+     <div className="m-7 ">
+      <p className="md:text-5xl text-3xl   text-center font-bold text-blue-600">Frequently Asked Questions</p>
+     </div>
+
+
+     <div className="m-24">
+      <div className="flex m-2  justify-start">
+        <p>Will any details about my order be shared on the internet?</p>
+      </div>
+      <div className="flex mt-5 justify-center">
+        <p>
+        No, only you and writer can see the details of your order.
+        </p>
+      </div>
+      <div className="flex   justify-end">
+        <img src="https://cdn-icons-png.flaticon.com/128/8898/8898827.png" alt="noimage" />
+      </div>
+     </div>
+
+
+
+     <div className="m-24">
+      <div className="flex m-2  justify-start">
+        <p>Will any details about my order be shared on the internet?</p>
+      </div>
+      <div className="flex mt-5 justify-center">
+        <p>
+        No, only you and writer can see the details of your order.
+        </p>
+      </div>
+      <div className="flex   justify-end">
+        <img src="https://cdn-icons-png.flaticon.com/128/8898/8898827.png" alt="noimage" />
+      </div>
+     </div>
+
+
+
+
+     <div className="m-24">
+      <div className="flex m-2  justify-start">
+        <p>Will any details about my order be shared on the internet?</p>
+      </div>
+      <div className="flex mt-5 justify-center">
+        <p>
+        No, only you and writer can see the details of your order.
+        </p>
+      </div>
+      <div className="flex   justify-end">
+        <img src="https://cdn-icons-png.flaticon.com/128/8898/8898827.png" alt="noimage" />
+      </div>
+     </div>
+
+
+
+     <div className="m-24">
+      <div className="flex m-2  justify-start">
+        <p>Will any details about my order be shared on the internet?</p>
+      </div>
+      <div className="flex mt-5 justify-center">
+        <p>
+        No, only you and writer can see the details of your order.
+        </p>
+      </div>
+      <div className="flex   justify-end">
+        <img src="https://cdn-icons-png.flaticon.com/128/8898/8898827.png" alt="noimage" />
+      </div>
+     </div>
+
+
+     <div className="m-24">
+      <div className="flex m-2  justify-start">
+        <p>Will any details about my order be shared on the internet?</p>
+      </div>
+      <div className="flex mt-5 justify-center">
+        <p>
+        No, only you and writer can see the details of your order.
+        </p>
+      </div>
+      <div className="flex   justify-end">
+        <img src="https://cdn-icons-png.flaticon.com/128/8898/8898827.png" alt="noimage" />
+      </div>
+     </div>
+
+
+
+     <div className="grid md:grid-cols-2 grid-cols-1 justify-items-center items-center bg-blue-600">
+      <div>
+        <img className="h-80  w-80" src="https://asset.edubirdie.com/bundles/asterfreelance/_layout/images/EdubirdieCom/bird-magnifying-glass-mob@2x.png" alt="noimage" />
+
+      </div>
+      <div>
+        <p className="text-5xl text-white font-bold">Why wait any longer?</p>
+        <p className="text-3xl m-3 text-white font-bold">Place an order now and get proposals from our professional writers within 10 second
+
+        </p>
+
+        <button className="bg-yellow-500 rounded-sm m-4  w-48 h-10 ">
+       Place Order
+      </button>
+
+      
+      
+      </div>
+     </div>
+
+     
+     
+
+      </>
+
+      
     )
 }
 
