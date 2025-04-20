@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 *{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: urbanist;
 }
 
 
@@ -12,7 +12,7 @@
     height: 100%;
     width: 100%;
    backface-visibility: hidden;
-    background-color: black;
+    background-color: rgba(0, 0, 255, 0.842);
     color:antiquewhite;
   
   }
@@ -46,3 +46,62 @@
     transition: all 0.5s ease;
   }
   
+  .pop{
+    display: none;
+   margin: 1.5rem;
+}
+
+.animate{
+  flex-wrap: nowrap;
+  overflow: hidden;
+ }
+ 
+ .slide{
+   display: flex;
+   animation: slider 25s linear infinite ;
+ }
+ 
+ 
+ @keyframes slider {
+   from{
+     transform: translate(0);
+   }
+   to{
+     transform: translate(-100%);
+   }
+   
+ }
+ 
+
+
+  @media (width < 1200px) {
+
+    .pop{
+        display: inline-block;
+        text-align: end;
+    }
+    
+   .close{
+    display: none;
+   }
+   .show{
+    position:absolute;
+    z-index: 1;
+    top:6.5rem;
+    left:0;
+    background-color: black;
+    width: 100%;
+   }
+
+   .show ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   }
+  
+    
+}
+
+
+

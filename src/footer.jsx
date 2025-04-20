@@ -7,21 +7,21 @@ function Footer(){
             <div>
                 <p className="text-3xl font-bold text-yellow-500" > Quick links</p>
                 <ul>
+                    <li className="text-white text-center">Services</li>
+                    <li className="text-white text-center">Packages</li>
+                    <li className="text-white text-center">Working</li>
                     <li className="text-white text-center">About</li>
-                    <li className="text-white text-center">details</li>
-                    <li className="text-white text-center">details</li>
-                    <li className="text-white text-center">details</li>
-                    <li className="text-white text-center">details</li>
+                    <li className="text-white text-center"> Websit</li>
                 </ul>
             </div>
             <div>
                 <p className="text-3xl font-bold text-center text-yellow-500 " >About us</p>
                 <ul>
-                <li className="text-white text-center">details</li>
-                <li className="text-white text-center">details</li>
-                <li className="text-white text-center">details</li>
-                <li className="text-white text-center">details</li>
-                <li className="text-white text-center">details</li>
+                <li className="text-white text-center">support </li>
+                <li className="text-white text-center">blog-page</li>
+                <li className="text-white text-center">Order</li>
+                <li className="text-white text-center">Working</li>
+                <li className="text-white text-center">Call-us</li>
 
 
                 </ul>
@@ -47,11 +47,11 @@ function Footer(){
             <div>
                 <p className="text-3xl font-bold text-yellow-500">Latest Blog</p>
                 <ul>
-                <li className="text-white text-center">details</li>
-                <li className="text-white text-center">details</li>
-                <li className="text-white text-center">details</li>
-                <li className="text-white text-center">details</li>
-                <li className="text-white text-center">details</li>
+                <li className="text-white text-center">Portfolio</li>
+                <li className="text-white text-center">E-commerce</li>
+                <li className="text-white text-center">Captize</li>
+                <li className="text-white text-center">Home.wdower</li>
+                <li className="text-white text-center">blogs</li>
 
                 </ul>
             </div>
@@ -60,7 +60,7 @@ function Footer(){
         <hr/>
         <div className="grid lg:grid-cols-2  m-2 grid-cols-1 text-yellow-400 justify-items-center items-center  ">
         <div>
-            <p >@2025 Mar's fitness Gym.in. All Rights Reserved.</p>
+            <p >@2025 Homework Dower work.in. All Rights Reserved.</p>
            
         </div>
         <div>
@@ -72,13 +72,13 @@ function Footer(){
 
       <div className=" grid lg:grid-cols-2 grid-cols-1  justify-items-center items-center ">
         <div>
-            <img className="h-24 w-24 " src="https://cdn-icons-png.flaticon.com/128/9546/9546977.png" alt="noiamge"/>
+            <img className="h-24 w-24 " src="https://asset.edubirdie.com/bundles/asterfreelance/_layout/images/EdubirdieCom/our-journey/our-journey-bird.png" alt="noiamge"/>
        
         </div>
        
         <div >
             <p className="p-2 m-1 text-blue-200 text-center">Related Searches:
-            Gym Near Me, Gold’s Gym Mumbai Bandra, Corporate Wellness Program, Personal Training Program, Gym Memberships Near Me, Fitness Near Me, Golds Gym Near Me, Personal Training Near Me, Gyms In Pune Kalyani Nagar, Gyms In Bengaluru RR Nagar, Gyms In Delhi Greater Kailash, Gym Workout Routine, Weight Training for Weight Loss</p>
+            Homework Dower considers academic integrity to be the essential part of the learning process and does not support any violation of the academic standards. Should you have any questions regarding our Fair Use Policy or become aware of any violations, please do not hesitate to contact us via  Homework Dower support</p>
 
         </div>
       </div>

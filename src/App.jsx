@@ -1,13 +1,14 @@
 import React from "react"
 import All from "./allone.jsx";
-import About from "./about.jsx"
-import Home from "./home.jsx"
-import Contact from "./contact.jsx";
-import Project from "./project.jsx";
+import About from "./pakges.jsx"
+import Home from "./serviices.jsx"
+import Contact from "./wroking.jsx";
+import Project from "./about1.jsx";
 import { createBrowserRouter } from "react-router-dom";
 import { RouterProvider } from "react-router-dom";
 import './App.css';
-import Gallary from "./gallary.jsx";
+import Gallary from "./websit.jsx";
+import Order from "./orderpage.jsx";
 const router = createBrowserRouter(
   [
     {
@@ -38,6 +39,11 @@ const router = createBrowserRouter(
         {
           path:'/gallary',
           element:<Gallary/>,
+      
+        },
+        {
+          path:'/order',
+          element:<Order/>,
       
         },
         
